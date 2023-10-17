@@ -1,32 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-
-const links = [
-	{
-		title: 'Главная',
-		link: '/',
-	},
-	{
-		title: 'О нас',
-		link: '/about',
-	},
-	{
-		title: 'Наши работы',
-		link: '/job',
-	},
-	{
-		title: 'Категория',
-		link: '/categorys',
-	},
-	{
-		title: 'Прайс',
-		link: '/price',
-	},
-	{
-		title: 'Контакты',
-		link: '/contacts',
-	},
-]
+import { links } from '../constans'
 
 const Header = () => {
 	const [colorChange, setColorchange] = useState(false)

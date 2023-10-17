@@ -2,7 +2,7 @@ const Home = () => {
 	return (
 		<>
 			<img
-				className='brightness-50  w-full object-cover'
+				className='brightness-50 h-screen w-full object-cover'
 				src='./img/hero.jpg'
 				alt='Hero'
 			/>

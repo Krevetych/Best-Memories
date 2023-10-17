@@ -1,13 +1,17 @@
-import { NavLink } from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-	return (
-		<>
-			<footer>
-				<p className='absolute bottom-3 w-full flex items-center justify-center font-bold text-lg'>&copy; {new Date().getFullYear()} Все права защищены 😊</p>
-			</footer>
-		</>
-	)
-}
+	const location = useLocation()
+	console.log(location)
+  return (
+    <>
+      <footer className={`${location.pathname=='/' ? "absolute bottom-3" : "mb-3" } w-full flex items-center justify-center`}>
+        <p className="font-bold text-lg">
+          &copy; {new Date().getFullYear()} Все права защищены 😊
+        </p>
+      </footer>
+    </>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,25 +1,5 @@
-const photographers = [
-	{
-		name: 'Артем Вагапов',
-		photo: './1.png',
-		spec: 'Фотограф',
-	},
-	{
-		name: 'Влад Смолин',
-		photo: './2.png',
-		spec: 'Фотограф',
-	},
-	{
-		name: 'Злата Корнева',
-		photo: './3.png',
-		spec: 'Фотограф',
-	},
-	{
-		name: 'Лена Ногина',
-		photo: './4.png',
-		spec: 'Фотограф',
-	},
-]
+import Slider from "../components/Slider"
+import { photographers } from "../constans"
 
 const About = () => {
 	return (
@@ -43,7 +23,8 @@ const About = () => {
 				))}
 			</div>
 
-			<p className='text-center mt-[5%] text-4xl font-bold'>Последние работы</p>
+			<p className='text-center mt-[5%] text-4xl font-bold mb-5'>Последние работы</p>
+			<Slider />
 		</>
 	)
 }
