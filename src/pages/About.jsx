@@ -3,7 +3,7 @@ import { photographers } from "../constans"
 
 const About = () => {
 	return (
-		<>
+		<main>
 			<p className='text-center mt-[5%] text-4xl font-bold'>Наши специалисты</p>
 
 			<div className='flex gap-10 items-center justify-around'>
@@ -23,9 +23,9 @@ const About = () => {
 				))}
 			</div>
 
-			<p className='text-center mt-[5%] text-4xl font-bold mb-5'>Последние работы</p>
+			<p className='text-center mt-[5%] text-4xl font-bold mb-8'>Последние работы</p>
 			<Slider />
-		</>
+		</main>
 	)
 }
 

@@ -1,6 +1,6 @@
 const Home = () => {
 	return (
-		<>
+		<main>
 			<img
 				className='brightness-50 h-screen w-full object-cover'
 				src='./img/hero.jpg'
@@ -14,7 +14,7 @@ const Home = () => {
 				Каждый снимок — шедевр. <br />
 				Сохраним моменты вашей жизни.
 			</p>
-		</>
+		</main>
 	)
 }
 

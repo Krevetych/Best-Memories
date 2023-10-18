@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import Job from './pages/Job'
 
 function App() {
 	return (
@@ -11,8 +12,8 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
-				{/*<Route path='/job' element={} />
-        <Route path='/categorys' element={} />
+				<Route path='/job' element={<Job />} />
+				{/*<Route path='/categorys' element={} />
         <Route path='/price' element={} />
         <Route path='/contacts' element={} />
         <Route path='/register' element={} />
