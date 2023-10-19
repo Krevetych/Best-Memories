@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Modal from './Modal'
 
-const JobCard = ({ title, desc, photo }) => {
+const JobCard = ({ title, desc, photo, photos }) => {
 	const [showModal, setShowModal] = useState(false)
 	return (
 		<>
@@ -23,7 +23,7 @@ const JobCard = ({ title, desc, photo }) => {
 						onClick={() => setShowModal(true)}
 						className='inline-flex items-center px-3 py-2 text-sm font-medium text-center duration-500 text-white bg-[#7554a3] rounded-lg hover:bg-[#53337c]'
 					>
-						Глянуть
+						Смотреть
 						<svg
 							className='w-3.5 h-3.5 ml-2'
 							aria-hidden='true'
@@ -41,7 +41,9 @@ const JobCard = ({ title, desc, photo }) => {
 						</svg>
 					</button>
 
-					{showModal ? <Modal setShowModal={setShowModal} /> : null}
+					{showModal ? (
+						<Modal setShowModal={setShowModal} photos={photos} title={title} desc={desc} />
+					) : null}
 				</div>
 			</div>
 		</>

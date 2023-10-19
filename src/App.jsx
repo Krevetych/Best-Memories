@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Job from './pages/Job'
+import Contacts from './pages/Contacts'
+import Price from './pages/Price'
 
 function App() {
 	return (
@@ -13,10 +15,9 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/job' element={<Job />} />
-				{/*<Route path='/categorys' element={} />
-        <Route path='/price' element={} />
-        <Route path='/contacts' element={} />
-        <Route path='/register' element={} />
+				<Route path='/contacts' element={<Contacts />} />
+				<Route path='/price' element={<Price />} />
+				{/*<Route path='/register' element={} />
         <Route path='/login' element={} />*/}
 			</Routes>
 			<Footer />

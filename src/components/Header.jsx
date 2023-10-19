@@ -19,7 +19,7 @@ const Header = () => {
 			<header
 				className={`${
 					!colorChange ? 'bg-transparent' : 'bg-[#10272d] scale-90 rounded-lg border-2 border-solid border-[#7554a3]'
-				} fixed duration-500 top-0 right-0 left-0 z-50 flex items-center justify-between px-10 py-6`}
+				} fixed duration-500 top-0 right-0 left-0 z-30 flex items-center justify-between px-10 py-6`}
 			>
 				<NavLink to='/'>
 					<p className='font-bold text-3xl'>BM</p>
